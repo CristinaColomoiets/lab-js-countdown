@@ -39,7 +39,12 @@ function startCountdown() {
 
 
 // ITERATION 3: Show Toast
-function showToast(message){
+function showToast(){
   console.log("showToast called!");
   cardToast.classList.add('show');
+  
+  let disableRoquetBlock = setTimeout(()=>{
+    cardToast.classList.remove('show');
+  },3000);
+
 }
